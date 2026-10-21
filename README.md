@@ -1,53 +1,66 @@
 
-# Tugas Mobile Programming - Flutter Profil Card
+# Tugas Mobile Programming - Kalkulator BMI Estetis (Standar Kemenkes RI)
 
-Tugas ini merupakan aplikasi mobile sederhana berbasis framework **Flutter** yang menampilkan kartu identitas profil mahasiswa beserta dua `Card` tambahan untuk alamat media sosial.
+Repository ini berisi aplikasi **Kalkulator BMI (Body Mass Index)** atau Indeks Massa Tubuh (IMT) berbasis framework **Flutter**. Aplikasi ini didesain khusus menggunakan tema warna **Cyan Tua / Teal** yang menarik serta mengadopsi standarisasi klasifikasi kesehatan dari **Kementerian Kesehatan RI (Kemenkes)** untuk populasi Asia/Indonesia.
 
-## 🧑‍💻 Biodata Mahasiswa
+## ✨ Fitur Utama Tugas
 
-* **Nama:** Muhammad Rizkya Nasti Firmansyah
-* **NPM:** 552-01-24-054
-* **Program Studi:** Teknik Informatika
+1. **Tombol "Reset" (Sesuai Soal 1):**
 
-## 🚀 Fitur Aplikasi
+   * Menyediakan tombol aksi `Reset` di sebelah tombol `Hitung`.
+   * Berfungsi untuk mengosongkan seluruh isi kotak input (`TextField` Tinggi & Berat Badan), mengembalikan pilihan gender ke default, serta menyembunyikan/menghilangkan visual kartu hasil perhitungan dari layar secara instan.
+2. **Tampilan Menarik & Estetis (Sesuai Soal 2):**
 
-* **Avatar Profil:** Menampilkan komponen avatar lingkaran (`CircleAvatar`).
-* **Informasi Utama:** Nama lengkap dan Nomor Pokok Mahasiswa (NPM).
-* **Card Media Sosial:** Dua buah komponen `Card` responsif yang memuat tautan media sosial:
-  * GitHub (`://github.com`)
-  * Instagram
-* **Desain Tema:** Menggunakan basis warna kustom **Cyan Tua / Teal Pekat** (`0xFF004D40`) dengan teks putih yang kontras dan bersih.
+   * Menggunakan basis palet warna kustom **Teal Pekat / Cyan Tua** (`0xFF004D40` & `0xFF00695C`) yang memberikan kesan modern, bersih, dan sejuk di mata.
+   * Dilengkapi komponen visual interaktif seperti `Card` yang melayang (*elevation*), pemanfaatan ikon representatif pada input, serta tata letak responsif menggunakan `SingleChildScrollView`.
+3. **Disparitas Hasil Gender Laki-Laki & Perempuan (Sesuai Soal 3):**
 
-## 📁 Struktur File Utama
+   * Mengelompokkan dan memisahkan logika perhitungan ambang batas (*cutoff points*) kesehatan secara spesifik antara Laki-laki dan Perempuan.
+   * Penentuan rentang mengacu pada fakta medis sensitivitas komposisi lemak viseral biologis serta regulasi hormonal pada tubuh wanita dewasa.
 
-```text
-aplikasi_pertama/
-├── lib/
-│   ├── main.dart        # Entry point utama aplikasi Flutter
-│   └── kartunama.dart   # Komponen tata letak halaman profil dan card
-└── README.md            # Dokumentasi proyek tugas
-```
+---
 
-## 🛠️ Cara Menjalankan Proyek secara Lokal
+## 📊 Batas Ambang Klasifikasi BMI (Standar Asia-Pasifik / Kemenkes RI)
 
-1. **Clone Repository:**
-   ```bash
-   git clone https://://github.com/aplikasi_pertama.git
-   ```
-2. **Masuk ke Direktori Proyek:**
-   ```bash
-   cd aplikasi_pertama
-   ```
-3. **Ambil Dependensi Proyek:**
+Aplikasi ini menggunakan pengondisian medis yang akurat untuk menentukan kategori kesehatan pengguna:
+
+### ♂️ Logika Laki-laki
+
+* **Kurus (Kekurangan Berat Badan):** BMI < 18.5
+* **Normal (Ideal Laki-laki):** BMI 18.5 – 22.9
+* **Kelebihan Berat Badan (Overweight):** BMI 23.0 – 24.9
+* **Obesitas Tingkat I:** BMI 25.0 – 29.9
+* **Obesitas Tingkat II:** BMI ≥ 30.0
+
+### ♀️ Logika Perempuan
+
+* **Kurus (Kekurangan Berat Badan):** BMI < 18.0
+* **Normal (Ideal Perempuan):** BMI 18.0 – 21.9
+* **Kelebihan Berat Badan (Overweight):** BMI 22.0 – 24.9
+* **Obesitas Tingkat I:** BMI 25.0 – 29.9
+* **Obesitas Tingkat II:** BMI ≥ 30.0
+
+---
+
+## 📁 Informasi File Proyek
+
+* **`lib/main.dart`** : Titik masuk (*entry point*) yang memanggil halaman kalkulator utama.
+* **`lib/kalkulatorBMI.dart`** : Berisi arsitektur stateful widget, kontroler teks (`TextEditingController`), komponen layout UI, logika matematika rumus BMI, dan fungsi reset form.
+
+## 🛠️ Cara Menjalankan Aplikasi
+
+Pastikan SDK Flutter Anda sudah terinstal dengan baik di perangkat lokal.
+
+1. Jalankan perintah unduh dependensi:
    ```bash
    flutter pub get
    ```
-4. **Jalankan Aplikasi:**
-   * Untuk Desktop Linux:
+2. Jalankan aplikasi pada perangkat target Anda:
+   * **Linux Desktop Native:**
      ```bash
      flutter run -d linux
      ```
-   * Untuk Web Browser (HTML Renderer):
+   * **Web Browser (Chrome/Brave via HTML Renderer):**
      ```bash
      flutter run -d chrome --dart-define=FLUTTER_WEB_RENDERER=html
      ```
