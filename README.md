@@ -52,5 +52,5 @@ aplikasi_pertama/
      flutter run -d chrome --dart-define=FLUTTER_WEB_RENDERER=html
      ```
 
-## ❗❗ Untuk Projek App BMI Di Tree Main0
-## ❗❗ Untuk Projek App Berita Di Tree Main1
+## ❗❗ Untuk Projek App BMI Di Tree/Branch Main0
+## ❗❗ Untuk Projek App Berita Di Tree/Branch Main1
