@@ -24,6 +24,7 @@ Aplikasi mobile berbasis Flutter yang dikembangkan untuk memenuhi tugas praktiku
 
 ## 📂 Struktur Direktori Proyek
 
+```text
 aplikasi_navigasi/
 ├── android/
 ├── ios/
@@ -44,6 +45,7 @@ aplikasi_navigasi/
 │   └── Hehe.jpg                    # Aset foto profil
 ├── pubspec.yaml                    # Konfigurasi dependensi & aset
 └── README.md
+```
 
 ---
 
