@@ -55,12 +55,12 @@ Pastikan Anda sudah menginstal Flutter SDK di komputer Anda.
 
 1. **Clone Repository ini**:
    git clone [github.com/environtment-variable/MobileProyekWithFlutter.git](https://github.com/environtment-variable/MobileProyekWithFlutter.git)
-   cd aplikasi_navigasi
-2. **Pilih Branch (jika menggunakan branch `main2`)**:
+2. cd aplikasi_navigasi
+3. **Pilih Branch (jika menggunakan branch `main2`)**:
    git checkout main2
-3. **Install Dependencies**:
+4. **Install Dependencies**:
    flutter pub get
-4. **Jalankan Aplikasi**:
+5. **Jalankan Aplikasi**:
    flutter run
 
 ---
