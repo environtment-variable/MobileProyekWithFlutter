@@ -54,3 +54,4 @@ aplikasi_pertama/
 
 ## ❗❗ Untuk Projek App BMI Di Tree/Branch Main0
 ## ❗❗ Untuk Projek App Berita Di Tree/Branch Main1
+## ❗❗ Untuk Projek App Berita Di Tree/Branch Main2
