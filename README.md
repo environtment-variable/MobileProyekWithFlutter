@@ -54,7 +54,7 @@ aplikasi_navigasi/
 Pastikan Anda sudah menginstal Flutter SDK di komputer Anda.
 
 1. **Clone Repository ini**:
-   git clone https://github.com/USERNAME_ANDA/aplikasi_navigasi.git
+   git clone [github.com/environtment-variable/MobileProyekWithFlutter.git](https://github.com/environtment-variable/MobileProyekWithFlutter.git)
    cd aplikasi_navigasi
 2. **Pilih Branch (jika menggunakan branch `main2`)**:
    git checkout main2
