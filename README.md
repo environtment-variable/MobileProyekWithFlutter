@@ -14,7 +14,7 @@ Tugas ini merupakan aplikasi mobile sederhana berbasis framework **Flutter** yan
 * **Avatar Profil:** Menampilkan komponen avatar lingkaran (`CircleAvatar`).
 * **Informasi Utama:** Nama lengkap dan Nomor Pokok Mahasiswa (NPM).
 * **Card Media Sosial:** Dua buah komponen `Card` responsif yang memuat tautan media sosial:
-  * GitHub (`://github.com`)
+  * GitHub (`https://github.com/environtment-variable`)
   * Instagram
 * **Desain Tema:** Menggunakan basis warna kustom **Cyan Tua / Teal Pekat** (`0xFF004D40`) dengan teks putih yang kontras dan bersih.
 
